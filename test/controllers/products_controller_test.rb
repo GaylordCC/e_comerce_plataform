@@ -23,4 +23,28 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
         assert_select 'form'
     end
+
+    test 'allows to create a new product' do
+        post products_path, params: {
+            product: {
+                title: 'Nintendo 64',
+                description: 'Sin cables de conexión',
+                price: 60
+            }
+        }
+
+        assert_redirected_to products_path
+    end
+    
+    test 'Does not allow to create a new product with empty field' do
+        post products_path, params: {
+            product: {
+                title: '',
+                description: 'Sin cables de conexión',
+                price: 60
+            }
+        }
+
+        assert_response :unprocessable_entity
+    end
 end
