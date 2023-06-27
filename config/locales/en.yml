@@ -1,35 +1,52 @@
 en:
   activerecord:
     models:
-      product: Producto
+      product: Product
     attributes:
       product:
-        title: 'Título'
-        description: 'Descripción'
-        price: 'Precio'
-        photo: 'Foto'
+        title: 'Title'
+        description: 'Description'
+        price: 'Price'
+        photo: 'Photo'
     errors:
       models:
         product:
           attributes:
             title:
-              blank: 'no puede estar vacio'
+              blank: 'can not be empty'
             description:
-              blank: 'no puede estar vacia'
+              blank: 'can not be empty'
             price:
-              blank: 'no puede estar vacio'
+              blank: 'can not be empty'
   common:
-    confirm: '¿Estas seguro de eliminar este producto?'
+    confirm: '¿Are you sure you want to remove this product?'
   products:
     edit:
-      title: 'Editar producto'
+      title: 'Edit product'
     new:
-      title: 'Añadir producto'
+      title: 'Add product'
     index:
-      title: 'Productos'
+      title: 'Products'
     create:
-      created: "Tu producto se ha creado correctamente"
+      created: "Your product has been successfully created"
     update:
-      updated: 'Tu producto se ha actualizado correctamente'
+      updated: 'Your product has been successfully updated'
     destroy:
-      destroyed: 'Tu producto se ha eliminado correctamente'
+      destroyed: 'Your product has been successfully deleted'
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add category'
+    edit:
+      title: 'Edit category'
+    create:
+      created: 'Your category has been successfully created'
+    update:
+      updated: 'Your category has been updated successfully'
+    destroy:
+      destroyed: 'Your category has been successfully deleted'
+    new:
+      title: 'Add category'

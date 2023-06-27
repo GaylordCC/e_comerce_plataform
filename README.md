@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
+# GitHub del Proyecto ROR
+* https://github.com/aprendev-com/curso-rails-principiantes
+
 * ...
