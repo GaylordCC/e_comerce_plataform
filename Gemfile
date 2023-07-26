@@ -74,3 +74,6 @@ end
 
 # Postgresql fulltextsearch
 gem "pg_search", "~> 2.3"
+
+# Pagination
+gem "pagy", "~> 6.0"
