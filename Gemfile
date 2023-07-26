@@ -71,3 +71,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Postgresql fulltextsearch
+gem "pg_search", "~> 2.3"
