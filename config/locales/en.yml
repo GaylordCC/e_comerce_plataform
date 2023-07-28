@@ -1,4 +1,7 @@
 en:
+  app_name: 'SellIT'
+  app_subname: 'Easy & Fast'
+  meta_title: 'Buy and Sell products'
   activerecord:
     models:
       product: Product

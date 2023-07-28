@@ -1,4 +1,7 @@
 es:
+  app_name: 'Vendelo'
+  app_subname: 'Fácil & Al_Instante'
+  meta_title: 'Compra y vende productos'
   activerecord:
     models:
       product: Producto

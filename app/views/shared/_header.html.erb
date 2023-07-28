@@ -1,6 +1,7 @@
 <%= link_to products_path do%>
-    <h1> Vendelo y Compralo </h1>
-    <h2> Facil & Al_Instante </h2>
+    <h1> <%= t('app_name') %> </h1>
+    <h2> <%= t('app_subname') %> </h2>
+    <%# <h2> Facil & Al_Instante </h2> %>
 <% end %>
 
 <%= link_to t('.add'), new_product_path %>
