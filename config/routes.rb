@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   # get '/products', to: 'products#index'
   # get '/products/:id/edit', to: 'products#edit', as: :edit_product
   resources :products, path: '/'
+
+  namespace :authentication, path: '', as: '' do
+    resources :users, only: [:new, :create]
+  end
 end

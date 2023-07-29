@@ -23,6 +23,10 @@ en:
               blank: 'can not be empty'
   common:
     confirm: '¿Are you sure you want to remove this product?'
+  authentication:
+    users:
+      create:
+        created: 'Your account has been created!'
   products:
     edit:
       title: 'Edit product'
