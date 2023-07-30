@@ -27,6 +27,9 @@ en:
     users:
       create:
         created: 'Your account has been created!'
+    sessions:
+      create:
+        created: 'Welcome!'
   products:
     edit:
       title: 'Edit product'
