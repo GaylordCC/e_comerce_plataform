@@ -23,6 +23,8 @@ en:
               blank: 'can not be empty'
   common:
     confirm: '¿Are you sure you want to remove this product?'
+    back: 'Go back'
+    not_logged_in: 'You have to login or create an account'
   authentication:
     users:
       create:

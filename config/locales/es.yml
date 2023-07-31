@@ -23,6 +23,8 @@ es:
               blank: 'no puede estar vacio'
   common:
     confirm: '¿Estas seguro de eliminar este producto?'
+    back: 'Volver'
+    not_logged_in: 'Tienes que hacer login o crear una cuenta'
   authentication:
     users:
       create:
