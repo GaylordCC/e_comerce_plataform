@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :authentication, path: '', as: '' do
+    resources :users, only: [:new, :create], path: '/register', path_name: { new: '/' }
+    resources :sessions, only: [:new, :create, :destroy], path: '/login', path_name: { new: '/' }
+  end
+
   resources :categories, except: :show
   # delete '/products/:id', to: 'products#destroy'
   # patch '/products/:id', to: 'products#update'
@@ -9,8 +14,4 @@ Rails.application.routes.draw do
   # get '/products/:id/edit', to: 'products#edit', as: :edit_product
   resources :products, path: '/'
 
-  namespace :authentication, path: '', as: '' do
-    resources :users, only: [:new, :create]
-    resources :sessions, only: [:new, :create]
-  end
 end
