@@ -20,9 +20,10 @@ en:
       category:
         name: 'Name'
   common:
-    confirm: '¿Are you sure you want to remove this product?'
+    confirm: '¿Are you sure?'
     back: 'Go back'
     not_logged_in: 'You have to login or create an account'
+    not_authorized: 'You do not have permissions for this action'
   shared:
     header:
       add: 'Add product'
