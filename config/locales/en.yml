@@ -31,6 +31,7 @@ en:
       login: 'Login'
       register: 'Register'
       logout: 'Logout'
+      favorites: 'My favorites'
   authentication:
     users:
       create:
@@ -82,3 +83,6 @@ en:
       destroyed: 'Your category has been successfully deleted'
     new:
       title: 'Add category'
+  favorites:
+    index:
+      title: 'My Favorites'
