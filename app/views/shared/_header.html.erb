@@ -7,6 +7,7 @@
 
     <div>
         <%= link_to t('.add'), new_product_path, class: "mx-2 text-teal-500 font-bold" if Current.user %>
+        <%= link_to t('.favorites'), favorites_path, class: "mx-2 text-teal-500 font-bold" if Current.user %>
         <%= link_to t('.categories'), categories_path, class: "mx-2 text-teal-500 font-bold" if Current.user&.admin? %>
         <%= link_to t('.login'), new_session_path, class: "mx-2 text-teal-500 font-bold" unless Current.user %>
         <%= link_to t('.register'), new_user_path, class: "mx-2 text-teal-500 font-bold" unless Current.user %>
@@ -17,15 +18,4 @@
     </div>
 </div>
 
-<<<<<<< HEAD
-<%= link_to t('.add'), new_product_path if Current.user %>
-<%= link_to t('.favorites'), favorites_path if Current.user %>
-<%= link_to t('.categories'), categories_path if Current.user&.admin? %>
-<%= link_to t('.login'), new_session_path unless Current.user %>
-<%= link_to t('.register'), new_user_path unless Current.user %>
-<%= link_to t('.logout'), session_path(Current.user.id), data: {
-    turbo_method: :delete,
-    turbo_confirm: t('common.confirm')
-} if Current.user %>
-=======
->>>>>>> 51b178b (Use of class to define mobile and ipad layout using tailwindcss)
+

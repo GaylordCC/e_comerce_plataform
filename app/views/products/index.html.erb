@@ -17,21 +17,13 @@
     <div class="flex overflow-x-scroll gap-2 my-4">
         <%= link_to t('.all'), products_path, class: "bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300" %>
 
-<<<<<<< HEAD
-    <%= turbo_frame_tag :products do %>
-        <%= render partial: 'category', collection: @categories %>
-        <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products' do %>
-            <%= render partial: 'product', collection: @products %>
-            <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
-=======
         <%= render partial: 'category', collection: @categories %>
     </div>
 
-    <%= turbo_frame_tag :products, class:"flex flex-col m-2" do%>
+    <%= turbo_frame_tag :products, class:"flex flex-col m-2" do %>
         <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2' do %>
             <%= render partial: 'product', collection: @products %>
             <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
->>>>>>> 51b178b (Use of class to define mobile and ipad layout using tailwindcss)
         <% end %>
     <% end %>
 
