@@ -80,3 +80,4 @@ gem "pagy", "~> 6.0"
 
 
 gem 'tailwindcss-rails', '2.0.30'
+gem "view_component", "~> 3.5"
