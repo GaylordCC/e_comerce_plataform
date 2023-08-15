@@ -24,4 +24,8 @@ Things you may want to cover:
 # GitHub del Proyecto ROR
 * https://github.com/aprendev-com/curso-rails-principiantes
 
+
+* To entry en Mailcatcher, please: Got to: http://127.0.0.1:1080/
+
+
 * ...
